@@ -4,6 +4,7 @@
 \usepackage{fontawesome}
 \usepackage{parskip}
 \usepackage{array}
+\usepackage{graphicx}
 \setlength{\parskip}{0.3 em}
 \setlength{\tabcolsep}{0.5 em}
 \pagestyle{empty}
@@ -12,27 +13,27 @@
 \author{}
 \date{}
 
+% Modified title with name, contact info, summary alongside image
 \renewcommand{\maketitle}{
-  \begin{center}
-    {\LARGE \textbf{Mohammed Arfa}\par}
-  \end{center}
+  \begin{tabular}{@{}p{0.7\textwidth}@{} p{0.3\textwidth}@{}}
+    \begin{minipage}{0.7\textwidth}
+      {\LARGE \textbf{Mohammed Arfa}} \\[0.5em]
+      \begin{tabular}{lll}
+        \faPhone: +91-9241681626 & \faEnvelope: \href{mailto:thearfa99@gmail.com}{\underline{thearfa99@gmail.com}} & \faLinkedinSquare: \href{https://www.linkedin.com/in/mohammed-arfa/}{\underline{Mohammed Arfa}} \\
+      \end{tabular} \\
+      Bengaluru, India \\[0.4em]
+      {I am a Computer Science student passionate about leveraging technology to solve real-world problems, proficient in multiple programming languages. Eager to contribute to innovative projects and drive impactful solutions in the tech industry.}
+    \end{minipage}
+    & 
+    \begin{minipage}{0.3\textwidth}
+      \raggedleft\includegraphics[width=3.5cm, height=3.5cm, keepaspectratio]{profile.png}
+    \end{minipage} \\
+  \end{tabular}
 }
 
 \begin{document}
 \maketitle
-
-\begin{center}
-    \begin{tabular}{ccc}
-        \faPhone: +91-9241681626 & \faEnvelope: \href{mailto:thearfa99@gmail.com}{\underline{thearfa99@gmail.com}} & \faLinkedinSquare: \href{https://www.linkedin.com/in/mohammed-arfa/}{\underline{Mohammed Arfa}}
-    \end{tabular}
-    \vspace{0.2em}
-    \begin{center}
-        Bengaluru, India
-    \end{center}
-\end{center}
-
-I am a Computer Science student passionate about leveraging technology to solve real-world problems, proficient in multiple programming languages. Eager to contribute to innovative projects and drive impactful solutions in the tech industry.
-\vspace{-.7em}
+\vspace{-1.7em}
 
 \section*{Education}
 \vspace{-.3em}
@@ -44,6 +45,8 @@ I am a Computer Science student passionate about leveraging technology to solve 
     \item \textbf{The Samhita Academy} \hfill \textbf{2011 - 2022} \\
           CBSE 1st Grade - 12th Grade [Physics, Chemistry, Mathematics and Computer Science] \hfill Bengaluru, India \vspace{-0.9em}
 \end{itemize}
+
+\vspace{-.9em}
 
 \section*{Experience}
 \vspace{-.5em}
@@ -60,8 +63,6 @@ I am a Computer Science student passionate about leveraging technology to solve 
 	      \begin{itemize}
 		      \item  Engineered a proprietary image optimization system that achieved 40\% faster page load times while minimizing AWS hosting costs.
 		      \item  Implemented Next.js serverless functions to replace traditional Express endpoints, resulting in 60\% faster API response times and improved application scalability.
-
-                
 	      \end{itemize}
     \item \vspace{0.3em} \textbf{PESU I/O} \hfill \textbf{August 2023 - Present} \\
     Deputy Manager \hfill Bengaluru, India \vspace{0.3em} \\
@@ -69,10 +70,12 @@ I am a Computer Science student passionate about leveraging technology to solve 
 \vspace{-0.9em}
 \end{itemize}
 
+\vspace{-0.5em}
+
 \section*{Technical Skills}
-\vspace{-.1em}
+\vspace{-.2em}
 \hrule
-\vspace{0.4em}
+\vspace{0.3em}
 
 \textbf{Languages}: Python, C, C++, Go, JavaScript, SQL \vspace{0.3em} \\
 \textbf{Technologies}: Git, MERN Stack, Next.js, AWS, Tailwind CSS, Postman API, OpenCV, Graph Algorithms \vspace{0.3em}\\
@@ -84,17 +87,18 @@ I am a Computer Science student passionate about leveraging technology to solve 
 \textbf{Machine Learning}: Decision Trees, Random Forest, SVM, KNN, CNN, RNN, Transformers \vspace{0.3em}\\
 \textbf{Database Management}: SQL, MongoDB, Neo4j \\
 
-\vspace{-1.7em}
+\vspace{-2.8em}
 
 \section*{Projects}
-\vspace{-.4em}
+\vspace{-.5em}
 \hrule
-\vspace{0.4em}
+\vspace{0.3em}
 
 \begin{itemize}
-    \item \textbf{\href{https://github.com/thearfa99/mern}{\underline{ListMe}}}: A full-stack To-Do List application with user authentication, task management, and automated email notifications using \textbf{React, Node.js, Express and MongoDB Atlas.} Implements \textbf{JWT-secured API endpoints} and \textbf{Postmark} for mailing services.
+    \item \textbf{\href{https://excalidraw.com/\#json=3GJJjDDzww13jjwMov6in,dotekxmLzc74PICs-tpmDQ}{\underline{SocialSense:A Neuro-Symbolic AI Model for Contextual Social Reasoning and Guidance}}}: SocialSense is a platform that combines neural networks and symbolic reasoning to deliver context-aware, explainable advice for socially anxious individuals. Leverages the Social Chemistry 101 dataset to model moral foundations, cultural norms, and situational dynamics. Integrates transformer-based NLP models for contextual understanding with a rule-based symbolic engine for moral inference and adaptive revision.
     \item \textbf{\href{https://github.com/thearfa99/huft}{\underline{Huffman Coding Visualizer}}}: Implements Huffman Coding for lossless data compression in \textbf{C}, with a visual representation of the Huffman Tree using \textbf{Raylib}. It demonstrates encoding processes through clear visual feedback, enhancing understanding of algorithmic efficiency.
     \item \textbf{\href{https://github.com/thearfa99/tureet}{\underline{Target}}}: A \textbf{computer vision} project that implements a face tracking and locking system using \textbf{OpenCV} for face detection and an \textbf{Arduino} for controlling servo motors. The system consists of three main components: Arduino code for servo control, a \textbf{Python} script for face tracking, and a manual control interface using \textbf{Tkinter}.
     \item \textbf{\href{https://github.com/thearfa99/ShopSmart}{\underline{ShopSmart}}}: A shopping list application implemented using a \textbf{Go Microservice}. The project demonstrates various aspects of Go programming, including its concurrency model, standard libraries, and best practices.
 \end{itemize}
+
 \end{document}
